@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.center-stepper {
+  display: flex;
+  justify-content: center;
+}
+
+.step {
+  background-color: rgb(253, 251, 251);
+  padding: 20px;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 0 auto; /* Center the card horizontally */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow for the floating effect */
+}
