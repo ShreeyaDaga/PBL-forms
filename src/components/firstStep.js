@@ -18,14 +18,14 @@ export default function FirstStep() {
   return (
     <div className='step'>
       <div>
-      <TextField label="First Name" margin="normal" variant="outlined" color="secondary" style={{ width: '30ch' }}/>
-      </div>
-      <div>
-      <TextField label="Last Name" margin="normal" variant="outlined" color="secondary" style={{ width: '30ch' }}/>
-      </div>
-      <div>
-      <TextField label="Roll Number" margin="normal" variant="outlined" color="secondary" style={{ width: '30ch' }}/>
-      </div>
+        <TextField label="First Name" margin="normal" variant="outlined" color="secondary" style={{ width: '30ch'}}/>
+        </div>
+        <div>
+        <TextField label="Last Name" margin="normal" variant="outlined" color="secondary" style={{ width: '30ch' }}/>
+        </div>
+        <div>
+        <TextField label="Roll Number" margin="normal" variant="outlined" color="secondary" style={{ width: '30ch' }}/>
+        </div>
           <Box
             component="form"
             sx={{
