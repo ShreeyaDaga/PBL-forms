@@ -6,8 +6,11 @@ import { multistepContext } from '../stepContext';
 // npm i react-icons
 import { MdCloudUpload, MdDelete } from 'react-icons/md'
 import { AiFillFileImage } from 'react-icons/ai'
+import { Document, Page } from 'react-pdf';
 
 export default function SecondStep() {
+    // const [step, setStep] = useState(1);
+
     const {setStep, userData, setUserData} = useContext(multistepContext);
     const [image, setImage] = useState(null)
     const [fileName, setFileName] = useState("No selected FIle")
@@ -20,9 +23,7 @@ export default function SecondStep() {
         <input type='file' accept='application/pdf' className='input-field' hidden
         onChange={({target: {files}})=>{
             files[0] && setFileName(files[0].name)
-            if(files){
-                setImage(URL.createObjectURL(files[0]))
-            }
+            setImage(null); // Set image to null to just display filename
         }}/>
         {image ?
         <img src={image} width={100} height={100} alt='fileName' style={{margin: '12px', marginBottom: '20px', alignItems:'center'}} />
